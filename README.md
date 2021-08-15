@@ -1,5 +1,7 @@
 # Mac 初始化教程
 
+> Mac配置相关，一键装机或系统恢复使用。
+
 1. 格式化和系统重装
     - https://support.apple.com/zh-cn/HT204904
 
