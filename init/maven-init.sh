@@ -1,4 +1,11 @@
 #!/bin/bash
+
+read -t 3000 -s -p "下面为您安装 maven （y/n）:" input
+echo -e "\n"
+if ! [[ "$input" == $'y' ]]; then
+  exit 1
+fi
+
 # 初始化个人 Mac 个人空间
 echo "初始化个人 Mac 个人空间：\n"
 echo "1、期间安装软件可能需要输入密码；\n"
@@ -14,26 +21,6 @@ echo "当前 shell 文件目录: $SHELL_PATH"
 echo "cd $SHELL_PATH"
 cd $SHELL_PATH
 
-# homebrew
-sh homebrew-init.sh
-
-## zsh
-sh zsh-init.sh
-
-# vim
-sh vim-init.sh
-
-# jdk
-sh jdk-init.sh
-
-# maven
-sh maven-init.sh
-
-# ruby 相关环境
-sh ruby-init.sh
-
-# node 安装
-sh node-init.sh
-
-# python3 安装
-sh python3-init.sh
+# java
+echo "maven 安装..."
+brew install maven
