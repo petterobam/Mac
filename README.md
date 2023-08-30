@@ -27,6 +27,10 @@
     - 网易云
     - WPS
     - 网易邮箱大师
+    - Logseq
+    - Discord
+    - VS Code
+    - uTools
 4. 安装强化功能插件
     - https://macwk.com/soft/path-finder
     - https://macwk.com/soft/yesplaymusic
